@@ -15,13 +15,6 @@
 
 ---
 
-# NGSVR - Next Generation Social VR
-
-> An open source, community-driven social VR platform built in Unreal Engine 5.  
-> PC-first. SteamVR-native. No walled gardens.
-
----
-
 ## What is NGSVR?
 
 NGSVR is an open source alternative to platforms like VRChat, built from the ground up in **Unreal Engine 5**. The goal is a fully open, self-hostable social VR experience - user generated avatars, user generated worlds, full body tracking, face tracking, and rich social interaction - without the closed ecosystem, without the corporate gatekeeping, and without the compromises.
