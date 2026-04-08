@@ -1,114 +1,106 @@
-# NGSVR — Next Generation Social VR
+# Contributing to NGSVR
 
-> An open source, community-driven social VR platform built in Unreal Engine 5.  
-> PC-first. SteamVR-native. No walled gardens.
+First off — thank you for being here. NGSVR is a community project and every contribution matters, whether it's code, documentation, testing, or just spreading the word.
 
----
-
-## What is NGSVR?
-
-NGSVR is an open source alternative to platforms like VRChat, built from the ground up in **Unreal Engine 5**. The goal is a fully open, self-hostable social VR experience — user generated avatars, user generated worlds, full body tracking, face tracking, and rich social interaction — without the closed ecosystem, without the corporate gatekeeping, and without the compromises.
-
-This project is in VERY early development. Right now I am building the **proof of concept** — getting the core pillars working before expanding scope. If you believe in open social VR, this is the place to build it.
+Please read this before opening a PR or issue.
 
 ---
 
-## Core Goals
+## Code of Conduct
 
-- 🌐 **Open Source** — Fully GPLv3. Fork it, self-host it, contribute to it.
-- 🖥️ **PC First** — Desktop mode and VR mode (SteamVR / OpenXR). No standalone device compromises.
-- 🧍 **User Avatars** — Runtime VRM avatar loading. Bring your existing avatars.
-- 🌍 **User Worlds** — Community-created spaces you can visit and host.
-- 🗣️ **Rich Social Features** — Spatial voice, text chat, hosted instances, friend system.
-- 🦾 **Full Body Tracking** — Native SteamVR tracker support (SlimeVR, Vive, etc).
-- 😮 **Face & Eye Tracking** — OpenXR face tracking extensions (Quest Pro, VIVE Focus, Pico 4 Pro).
-- 🔓 **Self-Hostable** — Run your own instance. Own your community.
+Be respectful. This project is built by people who care about open social VR. Harassment, gatekeeping, and bad faith behavior will result in removal. That's the whole policy.
 
 ---
 
-## Current Status
+## Ways to Contribute
 
-> ⚠️ This project is in early proof-of-concept stage. Nothing is stable. Everything is being built.
+### 💻 Code
+- Unreal Engine 5 (Blueprints or C++)
+- Networking / EOS integration
+- OpenXR / SteamVR integration
+- Avatar pipeline (VRM, IK)
+- World loading (glTF/GLB)
+- UI systems
 
-| Milestone | Status |
-|---|---|
-| M1 — Multiplayer presence (two players, one room) | 🔨 In Progress |
-| M2 — Runtime VRM avatar loading + IK | 📋 Planned |
-| M3 — Instance system, voice chat, FBT | 📋 Planned |
-| M4 — Face & eye tracking | 📋 Planned |
-| M5 — User world loading | 📋 Planned |
+### 🎨 Technical Art
+- Avatar shader development
+- VRM pipeline tooling
+- World creation tools and templates
+- Performance optimization
 
----
+### 🧪 Testing
+- Testing on different VR headsets
+- Testing different tracker setups (SlimeVR, Vive, etc)
+- Bug reporting and reproduction steps
 
-## Tech Stack
+### 📝 Documentation
+- Architecture documentation
+- Setup guides
+- API/system documentation
+- Wiki contributions
 
-| Area | Technology |
-|---|---|
-| Engine | Unreal Engine 5 (latest stable) |
-| VR Runtime | OpenXR (SteamVR, Air Link, Virtual Desktop) |
-| Networking | Epic Online Services (EOS) |
-| Voice | Vivox |
-| Avatar Format | VRM (open standard) |
-| World Format | glTF / GLB |
-| Platform | Windows PC (Desktop + VR) |
-
----
-
-## Why Not Just Use VRChat / ChilloutVR / Resonite?
-
-Those are great platforms, but they are all **closed**. You cannot self-host them. You cannot audit their code. You cannot fix what bothers you. You are always at the mercy of a company's decisions.
-
-NGSVR is different. If you don't like something, open a PR and change it.
+### 🎭 Content
+- Test avatars (VRM format, CC0 or equivalent license)
+- Test worlds (glTF/GLB format, CC0 or equivalent license)
 
 ---
 
-## Getting Started (Contributors)
+## Getting Started
 
-> Full setup guide coming soon. The project is not yet in a buildable state for contributors, but that is the first milestone.
+> ⚠️ The project is in early POC stage. A full contributor build guide will be published at Milestone 1. Watch the repo for updates.
 
-**Prerequisites (when ready):**
-- Unreal Engine 5.4+
-- Visual Studio 2022
-- Windows 10/11
+When ready, the setup will require:
+- Windows 10 or 11
+- Unreal Engine 5.4 or later
+- Visual Studio 2022 (Community is fine)
 - Git + Git LFS
 
-Watch this repo and join the Discord (coming soon) to be notified when the first contributor build is ready.
+---
+
+## Branch Structure
+
+| Branch | Purpose |
+|---|---|
+| `main` | Stable, always buildable |
+| `dev` | Active development, may be unstable |
+| `feature/feature-name` | Feature branch |
+
+**Always branch off `dev`, not `main`.**
 
 ---
 
-## Contributing
+## Pull Request Guidelines
 
-Contributors of all kinds are welcome:
-
-- 💻 **Unreal / C++ developers** — core systems, networking, VR integration
-- 🎨 **Technical artists** — avatar pipeline, shaders, world tooling
-- 🧪 **Testers** — VR hardware coverage (different headsets, tracker setups)
-- 📝 **Docs writers** — architecture docs, setup guides, wikis
-- 🎭 **Avatar / world creators** — test content for early builds
-
-Please read [CONTRIBUTING.md](Docs/CONTRIBUTING.md) before opening a PR.
+1. Branch from `dev`
+2. Keep PRs focused — one feature or fix per PR
+3. Write a clear description of what changed and why
+4. If it's a visual change, include screenshots or a short video
+5. Make sure the project still builds before opening a PR
+6. Link any related issues
 
 ---
 
-## Roadmap
+## Reporting Bugs
 
-See [ROADMAP.md](Docs/ROADMAP.md) for the full breakdown of planned milestones and features.
-
----
-
-## License
-
-NGSVR is licensed under the **GNU General Public License v3.0**.  
-See [LICENSE](LICENSE) for full details.
+Use the bug report issue template. Include:
+- What happened
+- What you expected to happen
+- Steps to reproduce
+- Your hardware (headset, trackers, GPU)
+- Unreal Engine version
 
 ---
 
-## Community
+## Feature Requests
 
-- 💬 Discord — *coming soon*
-- 🐛 Issues — [GitHub Issues](../../issues)
-- 💡 Feature Requests — [GitHub Issues](../../issues) (use the feature request template)
+Use the feature request issue template. Check existing issues first to avoid duplicates. Big feature ideas are better discussed in Discord before opening an issue.
 
 ---
 
-*Built by the community, for the community. No VC funding. No corporate agenda. Just open social VR.*
+## Questions?
+
+Join the Discord (link in README). That's where the real-time discussion happens.
+
+---
+
+*NGSVR is licensed under GPLv3. By contributing, you agree that your contributions will be licensed under the same.*
