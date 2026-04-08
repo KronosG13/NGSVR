@@ -1,4 +1,21 @@
-# NGSVR — Next Generation Social VR
+<p align="center">
+  <img src="Docs/Assets/logo.svg" alt="NGSVR Logo" width="180"/>
+</p>
+<h1 align="center">NGSVR - Next Generation Social VR</h1>
+<p align="center">
+  An open source, community-driven social VR platform built in Unreal Engine 5.<br/>
+  PC-first. SteamVR-native. No walled gardens.
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/license-GPLv3-blue"/>
+  <img src="https://img.shields.io/badge/engine-Unreal%20Engine%205-purple"/>
+  <img src="https://img.shields.io/badge/status-early%20POC-orange"/>
+  <img src="https://img.shields.io/badge/platform-Windows%20PC-lightgrey"/>
+</p>
+
+---
+
+# NGSVR - Next Generation Social VR
 
 > An open source, community-driven social VR platform built in Unreal Engine 5.  
 > PC-first. SteamVR-native. No walled gardens.
@@ -7,22 +24,22 @@
 
 ## What is NGSVR?
 
-NGSVR is an open source alternative to platforms like VRChat, built from the ground up in **Unreal Engine 5**. The goal is a fully open, self-hostable social VR experience — user generated avatars, user generated worlds, full body tracking, face tracking, and rich social interaction — without the closed ecosystem, without the corporate gatekeeping, and without the compromises.
+NGSVR is an open source alternative to platforms like VRChat, built from the ground up in **Unreal Engine 5**. The goal is a fully open, self-hostable social VR experience - user generated avatars, user generated worlds, full body tracking, face tracking, and rich social interaction - without the closed ecosystem, without the corporate gatekeeping, and without the compromises.
 
-This project is in early development. Right now we are building the **proof of concept** — getting the core pillars working before expanding scope. If you believe in open social VR, this is the place to build it.
+This project is in early development. Right now we are building the **proof of concept** - getting the core pillars working before expanding scope. If you believe in open social VR, this is the place to build it.
 
 ---
 
 ## Core Goals
 
-- 🌐 **Open Source** — Fully GPLv3. Fork it, self-host it, contribute to it.
-- 🖥️ **PC First** — Desktop mode and VR mode (SteamVR / OpenXR). No standalone device compromises.
-- 🧍 **User Avatars** — Runtime VRM avatar loading. Bring your existing avatars.
-- 🌍 **User Worlds** — Community-created spaces you can visit and host.
-- 🗣️ **Rich Social Features** — Spatial voice, text chat, hosted instances, friend system.
-- 🦾 **Full Body Tracking** — Native SteamVR tracker support (SlimeVR, Vive, etc).
-- 😮 **Face & Eye Tracking** — OpenXR face tracking extensions (Quest Pro, VIVE Focus, Pico 4 Pro).
-- 🔓 **Self-Hostable** — Run your own instance. Own your community.
+- 🌐 **Open Source** - Fully GPLv3. Fork it, self-host it, contribute to it.
+- 🖥️ **PC First** - Desktop mode and VR mode (SteamVR / OpenXR). No standalone device compromises.
+- 🧍 **User Avatars** - Runtime VRM avatar loading. Bring your existing avatars.
+- 🌍 **User Worlds** - Community-created spaces you can visit and host.
+- 🗣️ **Rich Social Features** - Spatial voice, text chat, hosted instances, friend system.
+- 🦾 **Full Body Tracking** - Native SteamVR tracker support (SlimeVR, Vive, etc).
+- 😮 **Face & Eye Tracking** - OpenXR face tracking extensions (Quest Pro, VIVE Focus, Pico 4 Pro).
+- 🔓 **Self-Hostable** - Run your own instance. Own your community.
 
 ---
 
@@ -32,11 +49,11 @@ This project is in early development. Right now we are building the **proof of c
 
 | Milestone | Status |
 |---|---|
-| M1 — Multiplayer presence (two players, one room) | 🔨 In Progress |
-| M2 — Runtime VRM avatar loading + IK | 📋 Planned |
-| M3 — Instance system, voice chat, FBT | 📋 Planned |
-| M4 — Face & eye tracking | 📋 Planned |
-| M5 — User world loading | 📋 Planned |
+| M1 - Multiplayer presence (two players, one room) | 🔨 In Progress |
+| M2 - Runtime VRM avatar loading + IK | 📋 Planned |
+| M3 - Instance system, voice chat, FBT | 📋 Planned |
+| M4 - Face & eye tracking | 📋 Planned |
+| M5 - User world loading | 📋 Planned |
 
 ---
 
@@ -80,11 +97,11 @@ Watch this repo and join the Discord (coming soon) to be notified when the first
 
 We welcome contributors of all kinds:
 
-- 💻 **Unreal / C++ developers** — core systems, networking, VR integration
-- 🎨 **Technical artists** — avatar pipeline, shaders, world tooling
-- 🧪 **Testers** — VR hardware coverage (different headsets, tracker setups)
-- 📝 **Docs writers** — architecture docs, setup guides, wikis
-- 🎭 **Avatar / world creators** — test content for early builds
+- 💻 **Unreal / C++ developers** - core systems, networking, VR integration
+- 🎨 **Technical artists** - avatar pipeline, shaders, world tooling
+- 🧪 **Testers** - VR hardware coverage (different headsets, tracker setups)
+- 📝 **Docs writers** - architecture docs, setup guides, wikis
+- 🎭 **Avatar / world creators** - test content for early builds
 
 Please read [CONTRIBUTING.md](Docs/CONTRIBUTING.md) before opening a PR.
 
@@ -105,9 +122,9 @@ See [LICENSE](LICENSE) for full details.
 
 ## Community
 
-- 💬 Discord — *coming soon*
-- 🐛 Issues — [GitHub Issues](../../issues)
-- 💡 Feature Requests — [GitHub Issues](../../issues) (use the feature request template)
+- 💬 Discord - *coming soon*
+- 🐛 Issues - [GitHub Issues](../../issues)
+- 💡 Feature Requests - [GitHub Issues](../../issues) (use the feature request template)
 
 ---
 
