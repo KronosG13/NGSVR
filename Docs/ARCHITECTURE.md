@@ -1,6 +1,6 @@
 # NGSVR Architecture
 
-This document describes the high-level architecture of NGSVR. It is a living document — as systems are built and decisions are made, this will be updated to reflect the actual state of the codebase.
+This document describes the high-level architecture of NGSVR. It is a living document - as systems are built and decisions are made, this will be updated to reflect the actual state of the codebase.
 
 > ⚠️ This is the intended architecture for the POC phase. Not all systems described here exist yet.
 
@@ -8,7 +8,7 @@ This document describes the high-level architecture of NGSVR. It is a living doc
 
 ## Overview
 
-NGSVR is built on Unreal Engine 5 and follows a client-server multiplayer model using Epic Online Services (EOS) for session management and networking. The application runs in two modes — Desktop and VR — with the VR layer handled entirely through OpenXR, making it headset-agnostic.
+NGSVR is built on Unreal Engine 5 and follows a client-server multiplayer model using Epic Online Services (EOS) for session management and networking. The application runs in two modes - Desktop and VR - with the VR layer handled entirely through OpenXR, making it headset-agnostic.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -47,8 +47,8 @@ Handles all hardware input and abstracts it from the rest of the engine.
 - **Input sources:**
   - HMD pose (head position + rotation)
   - Controller poses (left/right hand)
-  - SteamVR tracker poses (hips, feet, elbows — FBT)
-  - OpenXR face tracking extension (jaw, lips, cheeks, eyes — for supported HMDs)
+  - SteamVR tracker poses (hips, feet, elbows - FBT)
+  - OpenXR face tracking extension (jaw, lips, cheeks, eyes - for supported HMDs)
 - **Desktop fallback:** Mouse + keyboard with a free-look camera pawn
 
 The input layer feeds directly into the Avatar System's IK solver each tick.
@@ -76,9 +76,9 @@ Avatar rendered locally + replicated to other clients
 ```
 
 **IK Modes:**
-- **3-point IK** — Head + hands (minimum, works with any headset)
-- **6-point IK** — Head + hands + hips + feet (requires FBT trackers)
-- **Face tracking** — Blend shapes driven by OpenXR face tracking extension data
+- **3-point IK** - Head + hands (minimum, works with any headset)
+- **6-point IK** - Head + hands + hips + feet (requires FBT trackers)
+- **Face tracking** - Blend shapes driven by OpenXR face tracking extension data
 
 **Replication:** Avatar transform (head, hands, trackers) and blend shape weights are replicated to all players in the instance. Remote avatars are driven by replicated data, not local IK.
 
@@ -90,7 +90,7 @@ Handles loading and presenting user-created environments at runtime.
 
 **World format:** glTF 2.0 / GLB
 
-- Worlds are loaded as runtime assets — not cooked into the game
+- Worlds are loaded as runtime assets - not cooked into the game
 - A base persistent level is always loaded (handles game logic, UI, networking)
 - User worlds are streamed in as additive levels or as runtime-spawned static meshes
 - Collision, lighting, and basic interaction are derived from the glTF scene data
@@ -111,8 +111,8 @@ Handles loading and presenting user-created environments at runtime.
 NGSVR uses UE5's built-in replication system over Epic Online Services (EOS).
 
 **Session types:**
-- **Listen server** — One player hosts, others connect. Used for early POC and small groups.
-- **Dedicated server** — Planned for later. Allows self-hosted instances with no host player required.
+- **Listen server** - One player hosts, others connect. Used for early POC and small groups.
+- **Dedicated server** - Planned for later. Allows self-hosted instances with no host player required.
 
 **What is replicated:**
 - Player pawn transforms (head, hands, tracker positions)
@@ -124,13 +124,13 @@ NGSVR uses UE5's built-in replication system over Epic Online Services (EOS).
 
 ---
 
-### 5. Voice — Vivox
+### 5. Voice - Vivox
 
 Spatial voice is handled by Vivox, which is integrated into UE5 via the Online Subsystem Vivox plugin.
 
-- **Positional audio** — Voice volume and direction based on in-world position
-- **Instance-scoped** — Voice channels are tied to the current instance
-- **Mute/block** — Per-player mute controls planned for M3
+- **Positional audio** - Voice volume and direction based on in-world position
+- **Instance-scoped** - Voice channels are tied to the current instance
+- **Mute/block** - Per-player mute controls planned for M3
 
 Vivox is free for UE5 projects up to a generous usage threshold, making it suitable for a community-run open source project.
 
