@@ -1,13 +1,16 @@
 <p align="center">
   <img src="Docs/Assets/logo.svg" alt="NGSVR Logo" width="180"/>
 </p>
+
 <h1 align="center">NGSVR - Next Generation Social VR</h1>
+
 <p align="center">
   An open source, community-driven social VR platform built in Unreal Engine 5.<br/>
   PC-first. SteamVR-native. No walled gardens.
 </p>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/license-GPLv3-blue"/>
+  <img src="https://img.shields.io/badge/license-MIT-green"/>
   <img src="https://img.shields.io/badge/engine-Unreal%20Engine%205-purple"/>
   <img src="https://img.shields.io/badge/status-early%20POC-orange"/>
   <img src="https://img.shields.io/badge/platform-Windows%20PC-lightgrey"/>
@@ -19,13 +22,13 @@
 
 NGSVR is an open source alternative to platforms like VRChat, built from the ground up in **Unreal Engine 5**. The goal is a fully open, self-hostable social VR experience - user generated avatars, user generated worlds, full body tracking, face tracking, and rich social interaction - without the closed ecosystem, without the corporate gatekeeping, and without the compromises.
 
-This project is in early development. Right now we are building the **proof of concept** - getting the core pillars working before expanding scope. If you believe in open social VR, this is the place to build it.
+This project is in early development. Right now I are building the **proof of concept** - getting the core pillars working before expanding scope. If you believe in open social VR, this is the place to build it.
 
 ---
 
 ## Core Goals
 
-- 🌐 **Open Source** - Fully GPLv3. Fork it, self-host it, contribute to it.
+- 🌐 **Open Source** - Fully MIT licensed. Fork it, self-host it, contribute to it.
 - 🖥️ **PC First** - Desktop mode and VR mode (SteamVR / OpenXR). No standalone device compromises.
 - 🧍 **User Avatars** - Runtime VRM avatar loading. Bring your existing avatars.
 - 🌍 **User Worlds** - Community-created spaces you can visit and host.
@@ -88,7 +91,7 @@ Watch this repo and join the Discord (coming soon) to be notified when the first
 
 ## Contributing
 
-We welcome contributors of all kinds:
+I Ilcome contributors of all kinds:
 
 - 💻 **Unreal / C++ developers** - core systems, networking, VR integration
 - 🎨 **Technical artists** - avatar pipeline, shaders, world tooling
@@ -100,6 +103,10 @@ Please read [CONTRIBUTING.md](Docs/CONTRIBUTING.md) before opening a PR.
 
 ---
 
+## Architecture
+
+See [ARCHITECTURE.md](Docs/ARCHITECTURE.md) for a breakdown of how NGSVR is structured internally.
+
 ## Roadmap
 
 See [ROADMAP.md](Docs/ROADMAP.md) for the full breakdown of planned milestones and features.
@@ -108,8 +115,10 @@ See [ROADMAP.md](Docs/ROADMAP.md) for the full breakdown of planned milestones a
 
 ## License
 
-NGSVR is licensed under the **GNU General Public License v3.0**.  
+NGSVR is licensed under the **MIT License**.  
 See [LICENSE](LICENSE) for full details.
+
+> Note: NGSVR is built on Unreal Engine 5, which has its own [EULA](https://www.unrealengine.com/en-US/eula/unreal). The MIT license applies to the NGSVR source code itself. Use of this project still requires acceptance of Epic's terms.
 
 ---
 
