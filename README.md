@@ -91,7 +91,7 @@ Watch this repo and join the Discord (coming soon) to be notified when the first
 
 ## Contributing
 
-I Ilcome contributors of all kinds:
+Contributors of all kinds are welcome:
 
 - 💻 **Unreal / C++ developers** - core systems, networking, VR integration
 - 🎨 **Technical artists** - avatar pipeline, shaders, world tooling
