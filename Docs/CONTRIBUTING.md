@@ -1,6 +1,6 @@
 # Contributing to NGSVR
 
-First off — thank you for being here. NGSVR is a community project and every contribution matters, whether it's code, documentation, testing, or just spreading the word.
+First off, thank you for being here. NGSVR is a community project and every contribution matters, whether it's code, documentation, testing, or just spreading the word.
 
 Please read this before opening a PR or issue.
 
@@ -63,7 +63,7 @@ When ready, the setup will require:
 |---|---|
 | `main` | Stable, always buildable |
 | `dev` | Active development, may be unstable |
-| `feature/feature-name` | Feature branch |
+| `feature/your-feature-name` | Your feature branch, PRs go here |
 
 **Always branch off `dev`, not `main`.**
 
@@ -103,4 +103,8 @@ Join the Discord (link in README). That's where the real-time discussion happens
 
 ---
 
-*NGSVR is licensed under GPLv3. By contributing, you agree that your contributions will be licensed under the same.*
+## License
+
+NGSVR is licensed under the **MIT License**. By contributing, you agree that your contributions will be licensed under the same.
+
+> Note: NGSVR is built on Unreal Engine 5, which has its own [EULA](https://www.unrealengine.com/en-US/eula/unreal). The MIT license applies to the NGSVR source code itself.
